@@ -153,7 +153,7 @@ function App() {
               />
               <div className="txt">
                 <p>{message.text}</p>
-                {message.image && <img src={message.image} alt="DALL-E generated" />}
+                {message.image && <><br /><img src={message.image} alt="DALL-E generated" /></>}
               </div>
             </div>
           ))}
