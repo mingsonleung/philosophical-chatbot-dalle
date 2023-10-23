@@ -17,7 +17,6 @@ function App() {
 
   const [input, setInput] = useState("");
   const [isBotTyping, setIsBotTyping] = useState(false);
-  const [imageData, setImageData] = useState(null);
   const [messages, setMessages] = useState([
     {
       text: "Hello, I am an AI-powered philosopher. I cannot give you answers, but I can provide insight on anything you send! I typically do better when your messages have more detail. 😊",
@@ -36,7 +35,6 @@ function App() {
     setIsBotTyping(true);
     const res = await getChatCompletion(text);
     const img = await generateImage(res);
-    setImageData(img);
     setIsBotTyping(false);
     setMessages([
       ...messages,
@@ -155,7 +153,7 @@ function App() {
               />
               <div className="txt">
                 <p>{message.text}</p>
-                {message.image && <img src={message.image} alt="Generated image" />}
+                {message.image && <img src={message.image} alt="DALL-E generated" />}
               </div>
             </div>
           ))}
