@@ -34,7 +34,7 @@ function App() {
     setMessages([...messages, { text, isBot: false }]);
     setIsBotTyping(true);
     const res = await getChatCompletion(text);
-    const img = await generateImage(res);
+    const img = await generateImage(res.slice(0,500));
     setIsBotTyping(false);
     setMessages([
       ...messages,
