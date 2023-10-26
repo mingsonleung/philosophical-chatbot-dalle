@@ -58,7 +58,7 @@ function App() {
     setMessages([
       ...messages,
       { text, isBot: false },
-      { text: res, isBot: true },
+      { text: res, isBot: true, image: img },
     ]);
   };
 
