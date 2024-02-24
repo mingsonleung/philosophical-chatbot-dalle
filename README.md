@@ -20,8 +20,8 @@ A React-based chat application that provides insightful responses to user querie
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/clone.git
-    cd clone
+    git clone https://github.com/your-username/philosophical-chatbot-dalle.git
+    cd philosophical-chatbot-dalle
     ```
 
 2. Install the project dependencies:
